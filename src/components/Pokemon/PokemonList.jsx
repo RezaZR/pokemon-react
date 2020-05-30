@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import axios from "axios";
 
@@ -15,7 +15,7 @@ export default class PokemonList extends Component {
 
   render() {
     return this.state.pokemons !== null ? (
-      <React.Fragment>
+      <Fragment>
         {this.state.pokemons.map((pokemon) => (
           <div
             key={pokemon.name}
@@ -26,7 +26,7 @@ export default class PokemonList extends Component {
             {pokemon.name}
           </div>
         ))}
-      </React.Fragment>
+      </Fragment>
     ) : null;
   }
 }
