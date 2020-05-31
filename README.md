@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 I dont include my css files, you can always see the apps here (https://pokedex-reza.netlify.app/)
 
 ## Available Scripts
