@@ -46,7 +46,10 @@ export default class Pokemon extends Component {
     return (
       <div className="pokemon">
         <PokemonDetails attribute={this.state.selectedAttribute} />
-        <div className="pokemon__divider"></div>
+        <div className="pokemon__divider">
+          <div></div>
+          <div></div>
+        </div>
         <PokemonList getSelectedPokemon={this.getSelectedPokemon} />
       </div>
     );
