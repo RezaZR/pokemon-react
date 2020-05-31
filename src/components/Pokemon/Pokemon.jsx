@@ -1,9 +1,11 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
-import axios from "axios";
+import "./Pokemon.css";
 
 import PokemonDetails from "./PokemonDetails";
 import PokemonList from "./PokemonList";
+
+import axios from "axios";
 
 export default class Pokemon extends Component {
   state = {
@@ -42,10 +44,11 @@ export default class Pokemon extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className="pokemon">
         <PokemonDetails attribute={this.state.selectedAttribute} />
+        <div className="pokemon__divider"></div>
         <PokemonList getSelectedPokemon={this.getSelectedPokemon} />
-      </Fragment>
+      </div>
     );
   }
 }
